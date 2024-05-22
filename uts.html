@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial HTML dan CSS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #99a360;
+            text-align: center;
+        }
+        .paragraf1 {
+            color: rgb(28, 28, 77);
+            font-size: 18px;
+        }
+        .paragraf2 {
+            color: green;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        a {
+            color: rgb(18, 71, 73);
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .list {
+            margin-top: 20px;
+        }
+        .text-left{
+            text-align: left;
+        }
+        .pricing-table {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            margin-top: 20px;
+        }
+        .pricing-plan {
+            background: #fff;
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin: 0 10px;
+            text-align: center;
+            width: 200px;
+        }
+        .pricing-plan h2 {
+            margin: 0;
+            padding: 20px 0;
+            color: #fff;
+        }
+        .pricing-plan:nth-child(1) h2 {
+            background-color: #00aecd;
+        }
+        .pricing-plan:nth-child(2) h2 {
+            background-color: #2c3e50;
+        }
+        .pricing-plan:nth-child(3) h2 {
+            background-color: #e74c3c;
+        }
+        .price {
+            font-size: 24px;
+            margin: 20px 0;
+        }
+        .price span {
+            font-size: 12px;
+            color: #999;
+        }
+        .features {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 20px 0;
+        }
+        .features li {
+            margin: 10px 0;
+            font-size: 18px;
+        }
+        .signup-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            color: #fff;
+            background-color: #00aecd;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        .pricing-plan:nth-child(2) .signup-btn {
+            background-color: #2c3e50;
+        }
+        .pricing-plan:nth-child(3) .signup-btn {
+            background-color: #e74c3c;
+        }
+    </style>
+</head>
+<body>
+    <h1>Belajar HTML dan CSS</h1>
+
+    <p class="paragraf1">HTML (HyperText Markup Language) adalah bahasa standar yang digunakan untuk membuat dan menyusun halaman web. HTML menggunakan elemen-elemen yang disebut "tag" untuk menentukan struktur dan konten sebuah halaman web, seperti teks, gambar, hyperlink, dan berbagai elemen multimedia lainnya.</p>
+    <p class="paragraf2">CSS (Cascading Style Sheets) adalah bahasa yang digunakan untuk mendesain tampilan halaman web. CSS memungkinkan Anda untuk mengatur dan mengontrol tata letak, warna, font, dan elemen visual lainnya pada halaman web, sehingga dapat memisahkan konten dari presentasi visual.</p>
+
+    <a href="https://www.petanikode.com/">Petani Kode</a><br>
+    <a href="https://www.w3schools.com/">w3schools</a>
+
+   <div class="list">
+    <h2>Bahasa Pemrograman :</h2>
+    <ul>
+        <li class="text-left">HTML</li>
+        <li class="text-left">CSS</li>
+        <li class="text-left">JAVA</li>
+    </ul>
+   </div>
+
+
+    <img src="gambar.jpg" width="500 ">
+
+    <h2>Buy Order</h2>
+    <div class="pricing-table">
+        <div class="pricing-plan">
+            <h2>START</h2>
+            <div class="price">$15.99<span>/mo</span></div>
+            <ul class="features">
+                <li>✔</li>
+                <li>✖</li>
+                <li>✖</li>
+                <li>✖</li>
+            </ul>
+            <a href="#" class="signup-btn">SIGN-UP</a>
+        </div>
+        <div class="pricing-plan">
+            <h2>PRO</h2>
+            <div class="price">$25.99<span>/mo</span></div>
+            <ul class="features">
+                <li>✔</li>
+                <li>✔</li>
+                <li>✔</li>
+                <li>✖</li>
+            </ul>
+            <a href="#" class="signup-btn">SIGN-UP</a>
+        </div>
+        <div class="pricing-plan">
+            <h2>ULTIMATE</h2>
+            <div class="price">$35.99<span>/mo</span></div>
+            <ul class="features">
+                <li>✔</li>
+                <li>✔</li>
+                <li>✔</li>
+                <li>✔</li>
+            </ul>
+            <a href="#" class="signup-btn">SIGN-UP</a>
+        </div>
+    </div>
+</body>
+</html>
+
